@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container p-3">
+        <h1 class="text-center my-3">Pizza Order Form</h1>
+        <form>
+            <div class="row">
+                <div class="mb-3 col">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input name="firstName" type="text" class="form-control" id="firstName">
+                </div>
+                <div class="mb-3 col">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input name="lastName" type="text" class="form-control" id="lastName">
+                </div>
+            </div>
+            <div class="row">
+                <div class="mb-3 col">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input name="email" type="email" class="form-control" id="email">
+                </div>
+                <div class="mb-3 col">
+                    <label for="contactNumber" class="form-label">Contact Number</label>
+                    <input name="contactNumber" type="tel" class="form-control" id="contactNumber">
+                </div>
+                <div class="mb-3 col">
+                    <label for="date" class="form-label">Preferred Delivery Date</label>
+                    <input name="deliveryDate" type="date" class="form-control" id="date">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <fieldset class="col">
+                    <legend class="text-center">Flavor</legend>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" name="flavor" value="hawaian" id="hawaian">
+                        <label class="form-check-label" for="hawaian">Hawaian</label>
+                        <select name="hawaianQuantity" class="form-select mt-2" aria-label="Hawaian Quantity">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" name="flavor" value="pepperoni" id="pepperoni" checked>
+                        <label class="form-check-label" for="pepperoni">Pepperoni</label>
+                        <select name="pepperoniQuantity" class="form-select mt-2" aria-label="Pepperoni Quantity">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" name="flavor" value="vegetable" id="vegetable" checked>
+                        <label class="form-check-label" for="vegetable">Vegetable</label>
+                        <select name="vegetableQuantity" class="form-select mt-2" aria-label="Vegetable Quantity">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset class="col">
+                    <legend>Size</legend>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="size" id="sizeSmall" value="small">
+                        <label class="form-check-label" for="sizeSmall">Small</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="size" id="sizeMedium" value="medium" checked>
+                        <label class="form-check-label" for="sizeMedium">Medium</label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" name="size" id="sizeLarge" value="large">
+                        <label class="form-check-label" for="sizeLarge">Large</label>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="row mb-3">
+                <div class="mb-3 col">
+                    <label for="cardNumber" class="form-label">Credit Card Number</label>
+                    <input name="cardNumber" type="text" class="form-control" id="cardNumber">
+                </div>
+                <div class="col">
+                    <label for="pin" class="form-label">PIN</label>
+                    <input name="pin" type="password" class="form-control" id="pin">
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="note" class="form-label">Additional Note </label>
+                <textarea class="form-control" id="note"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary d-block mx-auto mb-3">Submit Order</button>
+        </form>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
